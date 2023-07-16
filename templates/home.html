@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+{% block  one %} 
+heloooooooooooooooooo its my layout
+{%endblock%}
+{%block second%}
+<h1>weeelcome to our3 app<h1>
+{%for course in courses%}
+<p> course name  is {{  course.name }}</p>
+{% for i in course.unit %}
+    <li>{{ i }}</li>
+    {% endfor %}
+{%endfor%}
+
+ {%endblock%}   
+ 
