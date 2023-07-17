@@ -1,4 +1,6 @@
-{% extends 'welcome.html' %}
+{% extends "accounts/login.html" %}
 {%block title%}
-{{user_name}}
+{%csrf_token%}
+<h4>congratulations you are logged in </h4>
+<h5> your email address  is : {{user.email}} and also your name is : {{user_name}} </h5>
 {%endblock%}

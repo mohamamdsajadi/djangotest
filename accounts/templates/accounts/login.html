@@ -21,6 +21,7 @@
 						<img src="{% static 'image/logo.png' %}" width="150px">
 					</div>
 					<div class="heading mb-4">
+						
 						<h4>{%block title%} {%endblock%}</h4>
 					</div>
 					{%block form%}{%endblock%}
@@ -28,6 +29,10 @@
 				</div>
 			</div>
 		</div>
+		{%if request.user.is_authenticated %}
+		<a href="{% url 'logout' %}" class="logout">Log out</a>
+		{% endif %}
 	</div>
+	
 </body>
 </html>
