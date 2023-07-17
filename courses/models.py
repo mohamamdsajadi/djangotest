@@ -1,11 +1,9 @@
 import email
-from operator import mod
-from pydoc import describe
-from pyexpat import model
+
 from re import S, U
 from turtle import title
 from django.db import models
-from django.contrib.auth.models import (AbstractBaseUser , BaseUserManager , PermissionsMixin )
+
 
 # Create your models here.
 from django.utils import timezone
